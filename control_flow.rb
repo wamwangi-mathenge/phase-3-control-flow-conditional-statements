@@ -24,12 +24,15 @@ end
 
 def fizzbuzz(num)
   # your code here
-  if num % 3 == 0
-    "Fizz"
-  elsif num % 5 == 0
-    "Buzz"
-  elsif num % 3 == 0 && num % 5 == 0
+  divisible_by_3 = (num % 3 == 0)
+  divisible_by_5 = (num % 5 == 0)
+
+  if divisible_by_3 && divisible_by_5
     "FizzBuzz"
+  elsif divisible_by_5
+    "Buzz"
+  elsif divisible_by_3
+    "Fizz"
   else
     num
   end
