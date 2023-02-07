@@ -24,9 +24,30 @@ end
 
 def fizzbuzz(num)
   # your code here
+  if num % 3 == 0
+    "Fizz"
+  elsif num % 5 == 0
+    "Buzz"
+  elsif num % 3 == 0 && num % 5 == 0
+    "FizzBuzz"
+  else
+    num
+  end
 end
 
 def calculator(operation, num1, num2)
   # your code here
+  case operation
+  when "+"
+    num1 + num2
+  when "-"
+    num1 - num2
+  when "*"
+    num1 * num2
+  when "/"
+    num1 / num2
+  else
+    puts "Invalid operation!"
+  end
 end
 
