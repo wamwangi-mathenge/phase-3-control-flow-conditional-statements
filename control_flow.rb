@@ -24,14 +24,14 @@ end
 
 def fizzbuzz(num)
   # your code here
-  divisible_by_3 = (num % 3 == 0)
-  divisible_by_5 = (num % 5 == 0)
+  # divisible_by_3 = (num % 3 == 0)
+  # divisible_by_5 = (num % 5 == 0)
 
-  if divisible_by_3 && divisible_by_5
+  if num % 3 == 0 && num % 5 == 0
     "FizzBuzz"
-  elsif divisible_by_5
+  elsif num % 5 == 0
     "Buzz"
-  elsif divisible_by_3
+  elsif num % 3 == 0
     "Fizz"
   else
     num
